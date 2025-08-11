@@ -1,6 +1,7 @@
-import express, { Request, Response, NextFunction } from "express"
+import express, { Request, Response, NextFunction } from 'express'
+import 'express-async-errors'
 
-import { routes } from "./routes"
+import { routes } from './routes'
 
 const PORT = 3333
 const app = express()

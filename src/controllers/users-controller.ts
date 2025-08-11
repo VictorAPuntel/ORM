@@ -1,4 +1,4 @@
-import { Request, Response } from "express"
+import { Request, Response } from 'express'
 
 class UsersController {
   async index(request: Request, response: Response) {
@@ -6,6 +6,7 @@ class UsersController {
   }
 
   async create(request: Request, response: Response) {
+    throw new Error('User already exists')
     return response.status(201).json()
   }
 
